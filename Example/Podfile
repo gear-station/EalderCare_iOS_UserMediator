@@ -1,0 +1,6 @@
+use_frameworks!
+target 'ElderCare_UserMediator_Tests' do
+  pod 'ElderCare_UserMediator', :path => '../'
+  
+  
+end
