@@ -10,15 +10,19 @@ import CTMediator
 
 extension CTMediator {
     
-    public func A_showSwift(callback: @escaping (String) -> Void) -> UIViewController? {
+    public func userViewController(callback: @escaping (String) -> Void) -> UIViewController? {
         let params = [
             "callback":callback,
-            kCTMediatorParamsKeySwiftTargetModuleName:"A_swift"
+            kCTMediatorParamsKeySwiftTargetModuleName:"ElderCare_UserModule"
             ] as [AnyHashable : Any]
-        if let viewController = self.performTarget("", action: "Extension_ViewController", params: params, shouldCacheTarget: false) as? UIViewController {
-            return viewController
-        }
-        return nil
+        
+        guard let userViewController = performTarget("User",
+                                                      action: "userViewController",
+                                                      params: params,
+                                                      shouldCacheTarget: false) as? UIViewController
+            else {return nil}
+      
+        return userViewController
     }
     
 }

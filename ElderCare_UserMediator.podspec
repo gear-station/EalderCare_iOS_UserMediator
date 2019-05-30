@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ElderCare_UserMediator'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'ElderCare_UserMediator is an extension of CTMediator for UserModule'
   s.swift_version    = '5.0'
   s.platform         = :ios, '10.0'
