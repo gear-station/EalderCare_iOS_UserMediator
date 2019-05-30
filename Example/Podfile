@@ -1,6 +1,11 @@
+# Private podspec repo
+source 'git@github.com:skykywind/JiaSpecRepo.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 use_frameworks!
 target 'ElderCare_UserMediator_Tests' do
   pod 'ElderCare_UserMediator', :path => '../'
   
+  pod 'CTMediator'
   
 end

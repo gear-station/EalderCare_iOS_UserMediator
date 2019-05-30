@@ -1,0 +1,6 @@
+framework module ElderCare_UserMediator {
+  umbrella header "ElderCare_UserMediator-umbrella.h"
+
+  export *
+  module * { export * }
+}

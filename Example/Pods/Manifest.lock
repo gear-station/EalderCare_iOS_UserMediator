@@ -1,0 +1,24 @@
+PODS:
+  - CTMediator (25)
+  - ElderCare_UserMediator (0.1.0):
+    - CTMediator
+
+DEPENDENCIES:
+  - CTMediator
+  - ElderCare_UserMediator (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CTMediator
+
+EXTERNAL SOURCES:
+  ElderCare_UserMediator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
+  ElderCare_UserMediator: cca9cae452f40181885ffedfa2552fc2472cf567
+
+PODFILE CHECKSUM: 4548138fc1b2b7a288d88d0c0356c13eb62f2f55
+
+COCOAPODS: 1.7.0.beta.2

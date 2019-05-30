@@ -9,28 +9,23 @@
 Pod::Spec.new do |s|
   s.name             = 'ElderCare_UserMediator'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ElderCare_UserMediator.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'ElderCare_UserMediator is an extension of CTMediator for UserModule'
+  s.swift_version    = '5.0'
+  s.platform         = :ios, '10.0'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  ElderCare_UserMediator is an extension of CTMediator for UserModule in ElderCare project,
+  We use this extension get the user target and actions.
                        DESC
 
-  s.homepage         = 'https://github.com/skykywind/ElderCare_UserMediator'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/gear-station'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'skykywind' => 'jiafujia123@gmail.com' }
-  s.source           = { :git => 'https://github.com/skykywind/ElderCare_UserMediator.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/gear-station/EalderCare_iOS_UserMediator.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
-  s.source_files = 'ElderCare_UserMediator/Classes/**/*'
+  s.source_files = 'ElderCare_UserMediator/Classes/**/*.{swift}'
   
   # s.resource_bundles = {
   #   'ElderCare_UserMediator' => ['ElderCare_UserMediator/Assets/*.png']
@@ -38,5 +33,6 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'CTMediator'
+  
 end

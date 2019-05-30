@@ -1,0 +1,28 @@
+{
+  "name": "ElderCare_UserMediator",
+  "version": "0.1.0",
+  "summary": "ElderCare_UserMediator is an extension of CTMediator for UserModule",
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "description": "ElderCare_UserMediator is an extension of CTMediator for UserModule in ElderCare project,\nWe use this extension get the user target and actions.",
+  "homepage": "https://github.com/gear-station",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "skykywind": "jiafujia123@gmail.com"
+  },
+  "source": {
+    "git": "git@github.com:gear-station/EalderCare_iOS_UserMediator.git",
+    "tag": "0.1.0"
+  },
+  "source_files": "ElderCare_UserMediator/Classes/**/*.{swift}",
+  "dependencies": {
+    "CTMediator": [
+
+    ]
+  }
+}
